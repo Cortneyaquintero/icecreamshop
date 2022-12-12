@@ -1,0 +1,399 @@
+/* home.html and icecream.html */
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  outline: none;
+  background: rgb(252, 243, 252);
+}
+
+a,
+s a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+  background: rgb(200, 225, 221);
+}
+
+.navigationBar {
+  padding-left: 0px;
+  padding-top: 8px;
+  border: 5px solid black;
+  background: rgb(200, 225, 221);
+  font-size: 26px;
+  font-weight: 700;
+  color: black;
+  letter-spacing: 4px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.homeNavItem,
+.iceCreamNavItem,
+.locationNavItem {
+  padding-top: 30px;
+  background: rgb(200, 225, 221);
+}
+
+.navigationBar li {
+  list-style: none;
+  text-decoration: none;
+  background: rgb(200, 225, 221);
+}
+
+.cortneyLogoNav {
+  width: 100px;
+  height: auto;
+  background: rgb(200, 225, 221);
+}
+
+.iceCreamHeader {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bolder;
+  letter-spacing: 4px;
+  padding: 40px;
+  background: rgb(252, 243, 252);
+}
+
+footer {
+  display: block;
+  border: 5px solid black;
+  padding: 100px;
+  padding-top: 100px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+footer .cortneyLogoFooter {
+  width: 330px;
+  height: auto;
+}
+
+footer,
+.cortneyLogoFooter {
+  background: rgb(200, 225, 221);
+}
+
+/* home.html */
+
+.homeAreas {
+  display: flex;
+}
+.homeAreas .homeArea {
+  flex: 1 1 0;
+  border: 3px solid black;
+  border-top: 0px;
+  font-size: 48px;
+  text-align: center;
+  background: linear-gradient(
+    0deg,
+    rgba(247, 223, 254, 0.93) 18%,
+    rgb(243, 226, 209) 87%
+  );
+}
+
+.homeItem img {
+  max-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  vertical-align: bottom;
+}
+
+.homeArea .homeItem .text {
+  text-align: center;
+  font-size: 48px;
+  font-weight: bolder;
+  letter-spacing: 4px;
+  padding-top: 100px;
+  background: linear-gradient(
+    0deg,
+    rgba(247, 223, 254, 0.93) 18%,
+    rgb(243, 226, 209) 87%
+  );
+}
+
+.orangeDreamsicleText {
+  font-size: 60px;
+  color: rgb(243, 188, 137);
+  text-shadow: 5px 5px rgb(249, 235, 222);
+  background: transparent;
+}
+
+.seeAllButton {
+  background-color: rgb(248, 238, 230);
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  border: 3px solid black;
+  border-radius: 75%;
+  padding: 20px;
+}
+
+.seeAllButton a {
+  background-color: rgb(248, 238, 230);
+}
+
+.thirdHomeArea {
+  flex: 1;
+  border: 5px solid black;
+  padding: 100px;
+  text-align: center;
+  background: linear-gradient(
+    0deg,
+    rgba(247, 223, 254, 0.93) 18%,
+    rgb(243, 226, 209) 87%
+  );
+}
+
+.heading {
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  background: transparent;
+}
+
+.thirdHomeArea p {
+  font-size: 25px;
+}
+.thirdHomeArea .row {
+  border: 3px solid black;
+}
+
+/* three column layout */
+.side {
+  float: left;
+  width: 15%;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 25px;
+}
+
+.middle {
+  margin-top: 10px;
+  float: left;
+  width: 70%;
+  text-align: center;
+}
+
+/* place text to the right */
+.right {
+  text-align: center;
+}
+
+/* clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* bar container */
+.bar-container {
+  width: 100%;
+  background-color: #f1f1f1;
+  text-align: center;
+  color: white;
+  border: 3px solid black;
+}
+
+/* individual bars */
+.bar-5 {
+  width: 100%;
+  height: 18px;
+  background-color: rgb(172, 245, 220);
+}
+.bar-4 {
+  width: 0%;
+  height: 18px;
+}
+.bar-3 {
+  width: 0%;
+  height: 18px;
+}
+.bar-2 {
+  width: 0%;
+  height: 18px;
+}
+.bar-1 {
+  width: 0%;
+  height: 18px;
+}
+
+/* icecream.html */
+
+.iceCreamGallery {
+  display: flex;
+  flex-direction: column;
+}
+
+.iceCreamGallery .galleryColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.galleryItem img {
+  max-width: 100%;
+  width: 100%;
+  border: 3px solid black;
+  height: 100% !important;
+  object-fit: cover;
+}
+
+/* overlay styles */
+
+.galleryItem {
+  position: relative;
+  cursor: pointer;
+}
+
+.overlay {
+  position: absolute;
+  font-size: 25px;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform: scale(0);
+  transition: all 0.2s 0.1s ease-in-out;
+  /* center overlay content */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid black;
+  background: linear-gradient(
+    0deg,
+    rgba(247, 223, 254, 0.93) 18%,
+    rgb(243, 226, 209) 87%
+  );
+}
+
+.overlay span {
+  background: transparent;
+}
+
+/* hover */
+.galleryItem:hover .overlay {
+  transform: scale(1);
+}
+
+/* media queries */
+@media only screen and (min-width: 768px) {
+  .iceCreamGallery,
+  .homeAreas {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 768px) {
+  .homeNavItem,
+  .iceCreamNavItem,
+  .locationNavItem {
+    font-size: 16px;
+    letter-spacing: normal;
+  }
+
+  .iceCreamHeader {
+    font-size: 25px;
+  }
+  .iceCreamGallery,
+  .homeAreas {
+    flex-direction: column;
+  }
+
+  .cortneyLogoNav {
+    width: 75px;
+  }
+  .homeArea .homeItem .text {
+    font-size: 40px;
+    letter-spacing: 1px;
+    padding: 30px;
+  }
+  .orangeDreamsicleText {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 767px) {
+  .cortneyLogoFooter {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .cortneyLogoFooter {
+    max-width: 240px;
+    max-height: 240px;
+  }
+  .homeArea .homeItem .text {
+    font-size: 40px;
+    letter-spacing: 4px;
+    padding-top: 70px;
+  }
+  .orangeDreamsicleText {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .cortneyLogoFooter {
+    max-width: 314px;
+    max-height: 314px;
+  }
+  .homeArea .homeItem .text {
+    font-size: 50px;
+    letter-spacing: 4px;
+    padding-top: 80px;
+  }
+  .orangeDreamsicleText {
+    font-size: 60px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .cortneyLogoFooter {
+    max-width: 380px;
+    max-height: 380px;
+  }
+  .homeArea .homeItem .text {
+    font-size: 60px;
+    letter-spacing: 4px;
+  }
+  .orangeDreamsicleText {
+    font-size: 70px;
+  }
+}
+@media (min-width: 1400px) {
+  .homeArea .homeItem .text {
+    font-size: 75px;
+    letter-spacing: 4px;
+  }
+  .orangeDreamsicleText {
+    font-size: 95px;
+  }
+}
+@media (min-width: 1800px) {
+  .homeArea .homeItem .text {
+    font-size: 120px;
+    letter-spacing: 4px;
+  }
+  .orangeDreamsicleText {
+    font-size: 140px;
+  }
+}
+/* responsive layout - make the columns stack on top of each other instead of next to each other */
+@media (max-width: 680px) {
+  .side,
+  .middle {
+    width: 100%;
+    font-size: 20px;
+  }
+  .right {
+    display: none;
+  }
+}
